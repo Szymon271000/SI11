@@ -1,0 +1,12 @@
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\bin\Debug\net6.0\Materials.Core.deps.json
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\bin\Debug\net6.0\Materials.Core.dll
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\bin\Debug\net6.0\Materials.Core.pdb
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\Materials.Core.csproj.AssemblyReference.cache
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\Materials.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\Materials.Core.AssemblyInfoInputs.cache
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\Materials.Core.AssemblyInfo.cs
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\Materials.Core.csproj.CoreCompileInputs.cache
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\Materials.Core.dll
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\refint\Materials.Core.dll
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\Materials.Core.pdb
+C:\Users\QVXP36\Desktop\SI11\LearningDiary\Materials.Core\obj\Debug\net6.0\ref\Materials.Core.dll
