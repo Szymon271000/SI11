@@ -1,4 +1,6 @@
-﻿using Materials.Core;
+﻿using AutoMapper;
+using Materials.Core;
+using Materials.Core.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,23 +11,31 @@ namespace LearningDiary.Controllers
     public class DiaryController : ControllerBase
     {
         private readonly IMaterialServices _materialServices;
-        public DiaryController(IMaterialServices materialServices)
+        private IMapper _mapper;
+        public DiaryController(IMaterialServices materialServices, IMapper mapper)
         {
             _materialServices = materialServices;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public IActionResult GetMaterials()
         {
-            return Ok(_materialServices.GetMaterials());
+            var materials = _materialServices.GetMaterials();
+            return Ok(_mapper.Map<IEnumerable<ReadMaterialDTO>>(materials));
         }
 
         [HttpPost]
 
-        public IActionResult AddMaterial(Material material)
+        public IActionResult AddMaterial(CreateMaterialDTO materialDTO)
         {
-            _materialServices.AddMaterial(material);
-            return Ok(material);
+            if (ModelState.IsValid)
+            {
+                var materialToAdd = _mapper.Map<Material>(materialDTO);
+                _materialServices.AddMaterial(materialToAdd);
+                return Ok(_mapper.Map<ReadMaterialDTO>(materialToAdd));
+            }
+            return BadRequest();
         }
     }
 }
