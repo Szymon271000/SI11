@@ -11,15 +11,15 @@ namespace Materials.Core
             _materials = dbClient.GetBooksCollection();
         }
 
-        public Material AddMaterial(Material material)
+        public async Task<Material> AddMaterial(Material material)
         {
-            _materials.InsertOne(material);
+            await _materials.InsertOneAsync(material);
             return material;
         }
 
-        public List<Material> GetMaterials()
+        public async Task<List<Material>> GetMaterials()
         {
-            return _materials.Find(material => true).ToList();
+            return await _materials.Find(material => true).ToListAsync();
         }
     }
 }

@@ -21,20 +21,20 @@ namespace LearningDiary.Controllers
         [HttpGet]
         [Route("GetAll")]
 
-        public IActionResult GetMaterials()
+        public async Task<IActionResult> GetMaterials()
         {
-            var materials = _materialServices.GetMaterials();
+            var materials = await _materialServices.GetMaterials();
             return Ok(_mapper.Map<IEnumerable<ReadMaterialDTO>>(materials));
         }
 
         [HttpPost]
         [Route("AddMaterial")]
-        public IActionResult AddMaterial(CreateMaterialDTO materialDTO)
+        public async Task<IActionResult> AddMaterial(CreateMaterialDTO materialDTO)
         {
             if (ModelState.IsValid)
             {
                 var materialToAdd = _mapper.Map<Material>(materialDTO);
-                _materialServices.AddMaterial(materialToAdd);
+                await _materialServices.AddMaterial(materialToAdd);
                 return Ok(_mapper.Map<ReadMaterialDTO>(materialToAdd));
             }
             return BadRequest();

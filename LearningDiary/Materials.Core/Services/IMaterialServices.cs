@@ -8,7 +8,7 @@ namespace Materials.Core
 {
     public interface IMaterialServices
     {
-        List<Material> GetMaterials();
-        Material AddMaterial(Material material);
+        Task <List<Material>> GetMaterials();
+        Task <Material> AddMaterial(Material material);
     }
 }

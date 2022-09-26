@@ -1,0 +1,58 @@
+﻿@using Materials.Core.DTOs
+@model IEnumerable<ReadMaterialDTO>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Materials</h1>
+
+<div class="col-md-5">
+        <form method="GET" asp-action="Index" class="row" autocomplete="off" >
+        </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                DateOfCreation
+            </th>
+            <th>
+                Tags
+            </th>
+            <th>
+                <a asp-action="AddMaterial" class="btn btn-sm btn-success">
+                    <i class="fa fa-plus" aria-hidden="true"></i> New</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfCreation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tags) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

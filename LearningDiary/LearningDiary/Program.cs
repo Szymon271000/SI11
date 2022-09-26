@@ -11,7 +11,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IDbClient, DbClient>();
 builder.Services.Configure<MaterialDbConfig>(builder.Configuration);
-builder.Services.AddTransient<IMaterialServices, MaterialsServices>();
+builder.Services.AddScoped<IMaterialServices, MaterialsServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
