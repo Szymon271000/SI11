@@ -19,6 +19,8 @@ namespace LearningDiary.Controllers
         }
 
         [HttpGet]
+        [Route("GetAll")]
+
         public IActionResult GetMaterials()
         {
             var materials = _materialServices.GetMaterials();
@@ -26,7 +28,7 @@ namespace LearningDiary.Controllers
         }
 
         [HttpPost]
-
+        [Route("AddMaterial")]
         public IActionResult AddMaterial(CreateMaterialDTO materialDTO)
         {
             if (ModelState.IsValid)
