@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LearningDiary.Repository;
 using Materials.Core;
 using Materials.Core.DTOs;
 using Microsoft.AspNetCore.Http;
@@ -10,11 +11,11 @@ namespace LearningDiary.Controllers
     [ApiController]
     public class DiaryController : ControllerBase
     {
-        private readonly IMaterialServices _materialServices;
+        private readonly IMaterialRepository _materialRepository;
         private IMapper _mapper;
-        public DiaryController(IMaterialServices materialServices, IMapper mapper)
+        public DiaryController(IMaterialRepository materialRepository, IMapper mapper)
         {
-            _materialServices = materialServices;
+            _materialRepository = materialRepository;
             _mapper = mapper;
         }
 
@@ -23,7 +24,7 @@ namespace LearningDiary.Controllers
 
         public async Task<IActionResult> GetMaterials()
         {
-            var materials = await _materialServices.GetMaterials();
+            var materials = await _materialRepository.GetAllMaterials();
             return Ok(_mapper.Map<IEnumerable<ReadMaterialDTO>>(materials));
         }
 
@@ -34,7 +35,7 @@ namespace LearningDiary.Controllers
             if (ModelState.IsValid)
             {
                 var materialToAdd = _mapper.Map<Material>(materialDTO);
-                await _materialServices.AddMaterial(materialToAdd);
+                await _materialRepository.AddMaterial(materialToAdd);
                 return Ok(_mapper.Map<ReadMaterialDTO>(materialToAdd));
             }
             return BadRequest();

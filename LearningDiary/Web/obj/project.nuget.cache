@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6MbAIER9gerl15TA4uq0Wh5JfrPg5XLuqw5eW07KqSIG5xRx/87DO3x7408KDFTX6cdF1o7hAetnO8No6HhFvQ==",
+  "dgSpecHash": "2Ihz1ntzDvOm84+n65usREtEUimZLWpolJfiJeVZ/AKsb9JAC5QOaeul9AbQd5giS71KNbbE3ahCxm0J1ACKBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI11\\LearningDiary\\Web\\Web.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\mongodb.bson\\2.17.1\\mongodb.bson.2.17.1.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\mongodb.driver\\2.17.1\\mongodb.driver.2.17.1.nupkg.sha512",

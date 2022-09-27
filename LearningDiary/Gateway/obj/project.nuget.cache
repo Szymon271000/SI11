@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8L//pMNwilkLnkQ8gUve3yrSgeMR11Yit24Abk/OPZgNtDHdoUHlBMf1f4W4wegUxQ7nWqOR1pq1j92zqkaKaw==",
+  "dgSpecHash": "e7kqLefIbDaU4QqB7kxGmxBXIBq7DEW8f5fUWC2+DBk/LaIS2r2Bl7pJtAV3WFAZ1f/3MlKAfFlKVy4xSxEhcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI11\\LearningDiary\\Gateway\\Gateway.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.diagnosticadapter\\3.1.22\\microsoft.extensions.diagnosticadapter.3.1.22.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\ocelot\\18.0.0\\ocelot.18.0.0.nupkg.sha512",

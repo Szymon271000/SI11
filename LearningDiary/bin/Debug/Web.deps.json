@@ -9,8 +9,7 @@
       "Web/1.0.0": {
         "dependencies": {
           "Materials.Core": "1.0.0",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
-          "MongoDB.Driver": "2.17.1"
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0"
         },
         "runtime": {
           "Web.dll": {}
