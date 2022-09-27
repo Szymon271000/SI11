@@ -20,8 +20,6 @@ var materialContext = new MaterialContext(config.MongoDB);
 var repo = new MaterialRepository(materialContext);
 builder.Services.AddSingleton<IMaterialRepository>(repo);
 
-builder.Services.Configure<MaterialDbConfig>(builder.Configuration);
-builder.Services.AddScoped<IMaterialServices, MaterialsServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
