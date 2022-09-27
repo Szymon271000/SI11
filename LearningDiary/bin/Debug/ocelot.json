@@ -1,0 +1,19 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:800"
+  },
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Diary/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "learningdiary",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Diary/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    }
+  ]
+}
