@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: learningdiaryapi
+  labels:
+    version: dev
+    product: learningdiaryapi
+spec:
+  selector:
+    app: learningdiaryapi
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learningdiaryapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: learningdiaryapi
+  template:
+    metadata:
+      labels:
+        app: learningdiaryapi
+    spec:
+      containers:
+        - name: learningdiaryapi
+          image: learningdiaryapi
+          imagePullPolicy: Never
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: K8s
+          ports:
+            - containerPort: 80
+              protocol: TCP

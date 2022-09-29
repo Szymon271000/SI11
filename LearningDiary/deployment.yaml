@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learningdiary
+spec:
+  selector:
+    matchLabels:
+      app: learningdiary
+  template:
+    metadata:
+      labels:
+        app: learningdiary
+    spec:
+      containers:
+      - name: learningdiary
+        image: learningdiary:dev
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+
+
+
