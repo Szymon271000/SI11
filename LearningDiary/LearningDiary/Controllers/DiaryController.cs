@@ -20,7 +20,7 @@ namespace LearningDiary.Controllers
         }
 
         [HttpGet]
-        [Route("GetAll")]
+        [Route("")]
 
         public async Task<IActionResult> GetMaterials()
         {

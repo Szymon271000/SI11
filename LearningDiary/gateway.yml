@@ -37,7 +37,7 @@ spec:
           imagePullPolicy: Never
           env:
             - name: ASPNETCORE_ENVIRONMENT
-              value: K8s
+              value: Development
           ports:
             - containerPort: 80
               protocol: TCP

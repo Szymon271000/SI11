@@ -11,7 +11,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{91ACC6BD-2167-4FB4-A071-5C6F1CA01723}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6D072921-9B76-4177-A6E3-C1DC25971C44}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8S", "K8S", "{3DF2909F-9100-4310-88C6-7B9DF3B33E32}"
+	ProjectSection(SolutionItems) = preProject
+		gateway.yml = gateway.yml
+		ingress.yml = ingress.yml
+		learningdiary.yml = learningdiary.yml
+		mongo.yml = mongo.yml
+		web.yml = web.yml
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{70713612-B6A8-4E87-B6B9-07E0EFA1C2FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +44,10 @@ Global
 		{91ACC6BD-2167-4FB4-A071-5C6F1CA01723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91ACC6BD-2167-4FB4-A071-5C6F1CA01723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91ACC6BD-2167-4FB4-A071-5C6F1CA01723}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D072921-9B76-4177-A6E3-C1DC25971C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D072921-9B76-4177-A6E3-C1DC25971C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D072921-9B76-4177-A6E3-C1DC25971C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D072921-9B76-4177-A6E3-C1DC25971C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70713612-B6A8-4E87-B6B9-07E0EFA1C2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70713612-B6A8-4E87-B6B9-07E0EFA1C2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70713612-B6A8-4E87-B6B9-07E0EFA1C2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70713612-B6A8-4E87-B6B9-07E0EFA1C2FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

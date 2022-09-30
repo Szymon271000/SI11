@@ -8,7 +8,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "learningdiary",
+          "Host": "learningdiaryapi",
           "Port": 80
         }
       ],

@@ -15,12 +15,12 @@ namespace Web.Services
         public async Task AddMaterial(CreateMaterialDTO material)
         {
             JsonContent content = JsonContent.Create(material);
-            var result = await _httpClient.PostAsync("http://gateway/Diary/AddMaterial", content);
+            var result = await _httpClient.PostAsync("http://learningdiaryapi:80/api/Diary/AddMaterial", content);
         }
 
         public async Task<List<ReadMaterialDTO>> FetchAllMaterials()
         {
-            var response =  await _httpClient.GetAsync("http://gateway/Diary/GetAll");
+            var response =  await _httpClient.GetAsync("http://learningdiaryapi:80/api/Diary");
             if (response.IsSuccessStatusCode)
             {
                 Newtonsoft.Json.JsonSerializer serializer = new();

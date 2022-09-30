@@ -21,22 +21,17 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
     depends_on:
       - mongo
+ gateway:
+    image: ${DOCKER_REGISTRY-}gateway
+    build:
+      context: .
+      dockerfile: Gateway/Dockerfile
 
  learningdiary:
     image: ${DOCKER_REGISTRY-}learningdiary
     build:
       context: .
       dockerfile: LearningDiary/Dockerfile
-    environment:
-      MongoDB__Host: mongo
-    depends_on:
-      - mongo
-
- gateway:
-    image: ${DOCKER_REGISTRY-}gateway
-    build:
-      context: .
-      dockerfile: Gateway/Dockerfile
 
 
  web:
